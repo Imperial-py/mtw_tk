@@ -30,7 +30,10 @@ class MoveTextWidget:
 
 
 class StopMoving:
+    """A class used to lock in place a text widget , use this after using MoveTextWidget"""
     def __init__(self,widget):
         widget.unbind("<Button-1>")
         widget.unbind("<B1-Motion>")
         widget.unbind("<ButtonRelease-1>")
+    def __str__(self):
+        return "A class used to lock in place a text widget , use this after using MoveTextWidget "
